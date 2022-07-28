@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Startup</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container d-flex align-items-center h-100"><!-- d-flex to activate the flexbox system to center vertically the text (bootstrap); with h-100 the container is the full length of the page (sin ello no podriamos haber centrado horizontalmente, ver en la pag web en inspeccionar, div class container, que sin h-100 no tiene en cuenta toda la pagina)-->
+      <div class="row">
+        <header class="text-center col-12"><!--with the col-12 we can expand along the call the header(centrar en la pagina)-->
+          <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
+        </header>
+        <div class="buffer col-12"></div><!-- We add this class because we want a bit of space between the header and the button.-->
+        <section class="text-center col-12"><!--with the col-12 we can expand along the call the header(centrar en la pagina)-->
+          <hr> <!-- hr is horizontal line-->
+          <a href="https://mailchi.mp/51a063f35847/startup"><!-- link created in mailchimp.com, ver en seccion 8-->
+            <button class="btn btn-primary btn-xl">Find out more</button> <!--"btn-xl" or extra large button isn't a Bootstrap class. we hace to create this "btn-xl" in our own style sheet.-->
+          </a>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
